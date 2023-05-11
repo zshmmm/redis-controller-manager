@@ -52,6 +52,7 @@ func main() {
 		LeaderElectionID: "ecaf1259.redis.qwoptcontroller.k8s.io",
 		// 当在 k8s 集群完运行时，需要定义选举资源所在的命名空间
 		LeaderElectionNamespace: Namespace,
+		// 更多配置查看 ctrl.Options 结构体属性
 	})
 
 	if err != nil {
